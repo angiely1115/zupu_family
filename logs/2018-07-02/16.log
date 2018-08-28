@@ -1,0 +1,386 @@
+[2018-07-02 16:04:03.485] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 1788 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-07-02 16:04:03.525] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-07-02 16:04:03.560] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@289710d9: startup date [Mon Jul 02 16:04:03 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:04:04.329] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-07-02 16:04:04.666] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c8bb20fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-07-02 16:04:04.964] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-07-02 16:04:05.572] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-07-02 16:04:06.168] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:04:06.459] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@289710d9: startup date [Mon Jul 02 16:04:03 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:04:06.527] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-07-02 16:04:06.528] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-07-02 16:04:06.552] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:04:06.552] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:04:06.709] [main] WARN  o.s.w.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties': Could not bind properties to 'RedisProperties' : prefix=spring.redis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.redis.lettuce.pool' to org.springframework.boot.autoconfigure.data.redis.RedisProperties$Pool
+[2018-07-02 16:04:06.715] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-07-02 16:04:06.722] [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2018-07-02 16:04:06.724] [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.redis.lettuce.pool' to org.springframework.boot.autoconfigure.data.redis.RedisProperties$Pool:
+
+    Property: spring.redis.lettuce.pool
+    Value: 
+    Origin: class path resource [application.yml]:37:12
+    Reason: No converter found capable of converting from type [java.lang.String] to type [org.springframework.boot.autoconfigure.data.redis.RedisProperties$Pool]
+
+Action:
+
+Update your application's configuration
+
+[2018-07-02 16:04:06.727] [main] ERROR o.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@10feca44] to prepare test instance [com.lv.zupu.ZupuApplicationTests@619f2afc]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties': Could not bind properties to 'RedisProperties' : prefix=spring.redis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.redis.lettuce.pool' to org.springframework.boot.autoconfigure.data.redis.RedisProperties$Pool
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1276)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1133)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:139)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 24 common frames omitted
+Caused by: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties': Could not bind properties to 'RedisProperties' : prefix=spring.redis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.redis.lettuce.pool' to org.springframework.boot.autoconfigure.data.redis.RedisProperties$Pool
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:110)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:93)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:424)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1700)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	... 42 common frames omitted
+Caused by: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.redis.lettuce.pool' to org.springframework.boot.autoconfigure.data.redis.RedisProperties$Pool
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:250)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:226)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindBean$4(Binder.java:333)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:73)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:62)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:54)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$null$5(Binder.java:341)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1351)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindBean$6(Binder.java:342)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:441)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withBean(Binder.java:427)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$400(Binder.java:381)
+	at org.springframework.boot.context.properties.bind.Binder.bindBean(Binder.java:339)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:278)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:221)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindBean$4(Binder.java:333)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:73)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:62)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:54)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$null$5(Binder.java:341)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1351)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindBean$6(Binder.java:342)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:441)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withBean(Binder.java:427)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$400(Binder.java:381)
+	at org.springframework.boot.context.properties.bind.Binder.bindBean(Binder.java:339)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:278)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:221)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:210)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:192)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.bind(ConfigurationPropertiesBinder.java:82)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:107)
+	... 56 common frames omitted
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [org.springframework.boot.autoconfigure.data.redis.RedisProperties$Pool]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:321)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:194)
+	at org.springframework.boot.context.properties.bind.BindConverter$CompositeConversionService.convert(BindConverter.java:162)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:96)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:88)
+	at org.springframework.boot.context.properties.bind.Binder.bindProperty(Binder.java:323)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:266)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:221)
+	... 102 common frames omitted
+[2018-07-02 16:06:29.495] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 13916 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-07-02 16:06:29.496] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-07-02 16:06:29.523] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@289710d9: startup date [Mon Jul 02 16:06:29 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:06:30.131] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-07-02 16:06:30.506] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$73471925] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-07-02 16:06:30.717] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-07-02 16:06:31.076] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-07-02 16:06:31.516] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:06:31.790] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@289710d9: startup date [Mon Jul 02 16:06:29 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:06:31.855] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-07-02 16:06:31.856] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-07-02 16:06:31.885] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:06:31.885] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:06:32.477] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
+[2018-07-02 16:06:32.850] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 3.95 seconds (JVM running for 4.929)
+[2018-07-02 16:06:33.343] [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[2018-07-02 16:06:33.411] [main] INFO  o.s.jdbc.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+[2018-07-02 16:06:33.433] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@289710d9: startup date [Mon Jul 02 16:06:29 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:06:33.462] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+[2018-07-02 16:06:33.469] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-07-02 16:07:31.872] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 2996 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-07-02 16:07:31.873] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-07-02 16:07:31.920] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@289710d9: startup date [Mon Jul 02 16:07:31 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:07:32.791] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-07-02 16:07:33.178] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b0ba9915] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-07-02 16:07:33.399] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-07-02 16:07:33.796] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-07-02 16:07:34.243] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:07:34.499] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@289710d9: startup date [Mon Jul 02 16:07:31 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:07:34.558] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-07-02 16:07:34.559] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-07-02 16:07:34.585] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:07:34.585] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:07:34.923] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
+[2018-07-02 16:07:35.258] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 4.013 seconds (JVM running for 5.019)
+[2018-07-02 16:07:35.572] [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[2018-07-02 16:07:35.609] [main] INFO  o.s.jdbc.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+[2018-07-02 16:07:35.629] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@289710d9: startup date [Mon Jul 02 16:07:31 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:07:35.641] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+[2018-07-02 16:07:35.651] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-07-02 16:07:54.798] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 6252 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-07-02 16:07:54.799] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-07-02 16:07:54.828] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@289710d9: startup date [Mon Jul 02 16:07:54 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:07:55.406] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-07-02 16:07:55.791] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd9cfd89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-07-02 16:07:55.993] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-07-02 16:07:56.391] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-07-02 16:07:56.838] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:07:57.073] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@289710d9: startup date [Mon Jul 02 16:07:54 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:07:57.149] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-07-02 16:07:57.150] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-07-02 16:07:57.173] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:07:57.173] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:07:57.481] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
+[2018-07-02 16:07:57.814] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 3.565 seconds (JVM running for 4.437)
+[2018-07-02 16:07:58.115] [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[2018-07-02 16:07:58.147] [main] INFO  o.s.jdbc.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+[2018-07-02 16:07:58.165] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@289710d9: startup date [Mon Jul 02 16:07:54 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:07:58.178] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+[2018-07-02 16:07:58.186] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-07-02 16:08:44.361] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 13872 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-07-02 16:08:44.362] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-07-02 16:08:44.406] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@289710d9: startup date [Mon Jul 02 16:08:44 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:08:45.179] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-07-02 16:08:45.515] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6644fe6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-07-02 16:08:45.741] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-07-02 16:08:46.119] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-07-02 16:08:46.578] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:08:46.837] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@289710d9: startup date [Mon Jul 02 16:08:44 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:08:46.901] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-07-02 16:08:46.902] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-07-02 16:08:46.930] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:08:46.930] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:08:47.332] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
+[2018-07-02 16:08:47.684] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 3.904 seconds (JVM running for 4.868)
+[2018-07-02 16:08:47.976] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@289710d9: startup date [Mon Jul 02 16:08:44 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:08:47.989] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+[2018-07-02 16:08:47.997] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-07-02 16:13:14.306] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 5244 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-07-02 16:13:14.307] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-07-02 16:13:14.345] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5a18cd76: startup date [Mon Jul 02 16:13:14 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:13:15.065] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-07-02 16:13:15.433] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$617cd2bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-07-02 16:13:15.650] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-07-02 16:13:16.060] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-07-02 16:13:16.535] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:13:16.838] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5a18cd76: startup date [Mon Jul 02 16:13:14 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:13:16.906] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-07-02 16:13:16.908] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-07-02 16:13:16.943] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:13:16.943] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:13:17.349] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
+[2018-07-02 16:13:17.791] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 4.075 seconds (JVM running for 5.212)
+[2018-07-02 16:13:18.080] [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[2018-07-02 16:13:18.110] [main] INFO  o.s.jdbc.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+[2018-07-02 16:13:18.125] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@5a18cd76: startup date [Mon Jul 02 16:13:14 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:13:18.135] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+[2018-07-02 16:13:18.142] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-07-02 16:14:27.491] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 9768 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-07-02 16:14:27.492] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-07-02 16:14:27.529] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5a18cd76: startup date [Mon Jul 02 16:14:27 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:14:28.138] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-07-02 16:14:28.541] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6644fe6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-07-02 16:14:28.797] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-07-02 16:14:29.285] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-07-02 16:14:29.914] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:14:30.252] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5a18cd76: startup date [Mon Jul 02 16:14:27 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:14:30.331] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-07-02 16:14:30.332] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-07-02 16:14:30.365] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:14:30.365] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:14:30.793] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
+[2018-07-02 16:14:31.199] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 4.317 seconds (JVM running for 5.305)
+[2018-07-02 16:14:31.510] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@5a18cd76: startup date [Mon Jul 02 16:14:27 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:14:31.522] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+[2018-07-02 16:14:31.532] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-07-02 16:14:51.718] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 10480 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-07-02 16:14:51.720] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-07-02 16:14:51.753] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5a18cd76: startup date [Mon Jul 02 16:14:51 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:14:52.448] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-07-02 16:14:52.823] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b43222b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-07-02 16:14:53.013] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-07-02 16:14:53.406] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-07-02 16:14:53.847] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:14:54.105] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5a18cd76: startup date [Mon Jul 02 16:14:51 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:14:54.163] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-07-02 16:14:54.164] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-07-02 16:14:54.210] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:14:54.211] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:14:54.532] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
+[2018-07-02 16:14:54.858] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 3.79 seconds (JVM running for 4.787)
+[2018-07-02 16:14:55.139] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@5a18cd76: startup date [Mon Jul 02 16:14:51 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:14:55.150] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+[2018-07-02 16:14:55.158] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-07-02 16:27:38.037] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 11276 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-07-02 16:27:38.050] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-07-02 16:27:38.107] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5a18cd76: startup date [Mon Jul 02 16:27:38 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:27:39.129] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-07-02 16:27:39.605] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$83d6c7e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-07-02 16:27:39.932] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-07-02 16:27:40.530] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-07-02 16:27:41.207] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:27:41.573] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5a18cd76: startup date [Mon Jul 02 16:27:38 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:27:41.655] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-07-02 16:27:41.656] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-07-02 16:27:41.681] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:27:41.681] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:27:42.273] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
+[2018-07-02 16:27:42.626] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 5.287 seconds (JVM running for 7.637)
+[2018-07-02 16:27:43.179] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@5a18cd76: startup date [Mon Jul 02 16:27:38 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:27:43.224] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+[2018-07-02 16:27:43.235] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-07-02 16:49:34.752] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 11012 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-07-02 16:49:34.771] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-07-02 16:49:34.838] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3da30852: startup date [Mon Jul 02 16:49:34 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:49:36.051] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-07-02 16:49:36.533] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67231b89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-07-02 16:49:36.843] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-07-02 16:49:37.511] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-07-02 16:49:38.253] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:49:38.664] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3da30852: startup date [Mon Jul 02 16:49:34 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:49:38.734] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-07-02 16:49:38.735] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-07-02 16:49:38.765] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:49:38.765] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:49:39.388] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
+[2018-07-02 16:49:39.717] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 5.943 seconds (JVM running for 7.597)
+[2018-07-02 16:49:40.249] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@3da30852: startup date [Mon Jul 02 16:49:34 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:49:40.271] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+[2018-07-02 16:49:40.278] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-07-02 16:52:09.280] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 2244 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-07-02 16:52:09.281] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-07-02 16:52:09.320] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3da30852: startup date [Mon Jul 02 16:52:09 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:52:10.033] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-07-02 16:52:10.425] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d55a32b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-07-02 16:52:10.639] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-07-02 16:52:11.062] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-07-02 16:52:11.513] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:52:11.777] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3da30852: startup date [Mon Jul 02 16:52:09 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:52:11.863] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-07-02 16:52:11.865] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-07-02 16:52:11.890] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:52:11.891] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:52:12.246] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
+[2018-07-02 16:52:12.597] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 3.987 seconds (JVM running for 4.989)
+[2018-07-02 16:52:12.870] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@3da30852: startup date [Mon Jul 02 16:52:09 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:52:12.884] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+[2018-07-02 16:52:12.895] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-07-02 16:55:53.203] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 14292 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-07-02 16:55:53.204] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-07-02 16:55:53.233] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3da30852: startup date [Mon Jul 02 16:55:53 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:55:53.929] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-07-02 16:55:54.266] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$31e0b64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-07-02 16:55:54.475] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-07-02 16:55:54.873] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-07-02 16:55:55.331] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:55:55.614] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3da30852: startup date [Mon Jul 02 16:55:53 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:55:55.695] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-07-02 16:55:55.696] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-07-02 16:55:55.724] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:55:55.724] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:55:56.113] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
+[2018-07-02 16:55:56.472] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 3.927 seconds (JVM running for 5.039)
+[2018-07-02 16:55:56.717] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@3da30852: startup date [Mon Jul 02 16:55:53 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:55:56.734] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+[2018-07-02 16:55:56.742] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-07-02 16:58:09.214] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 11900 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-07-02 16:58:09.216] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-07-02 16:58:09.253] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3da30852: startup date [Mon Jul 02 16:58:09 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:58:09.899] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-07-02 16:58:10.266] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67231b89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-07-02 16:58:10.498] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-07-02 16:58:10.977] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-07-02 16:58:11.471] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:58:11.749] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3da30852: startup date [Mon Jul 02 16:58:09 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:58:11.815] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-07-02 16:58:11.816] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-07-02 16:58:11.846] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:58:11.846] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-07-02 16:58:12.222] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
+[2018-07-02 16:58:12.571] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 4.005 seconds (JVM running for 4.992)
+[2018-07-02 16:58:12.847] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@3da30852: startup date [Mon Jul 02 16:58:09 GMT+08:00 2018]; root of context hierarchy
+[2018-07-02 16:58:12.858] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+[2018-07-02 16:58:12.882] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
