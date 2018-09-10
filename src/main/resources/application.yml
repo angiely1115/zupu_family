@@ -48,7 +48,6 @@ spring:
 #      suffix: .jsp
 #  thymeleaf:
 #  cach: false
-
 mybatis-plus:
   # 如果是放在src/main/java目录下 classpath:/com/yourpackage/*/mapper/*Mapper.xml
   # 如果是放在resource目录 classpath:/mapper/*Mapper.xml
@@ -83,9 +82,27 @@ mybatis-plus:
     #配置JdbcTypeForNull, oracle数据库必须配置
     #jdbc-type-for-null: 'null'
 logging:
-    level:
-        root: info
-        org.springframework.web: info
-        org.apache.ibatis: warn
-    path: "./logs"
+  file: ${spring.application.name}
+  level:
+   #root: info
+   org.springframework.web: info
+     #org.apache.ibatis: debug
+     #com.lv.zupu.mapperDao: debug
+#   jdbc:
+#     sqltiming: WARN #包含 SQL 语句实际的执行时间
+#     audit: 'OFF' # 	除了 ResultSet 之外的所有JDBC调用信息，篇幅较长
+#     resultset: 'OFF' #包含 ResultSet 的信息，输出篇幅较长
+#     connection: 'OFF' #连接信息
+#     sqlonly: 'OFF' #仅仅记录 SQL 语句，会将占位符替换为实际的参数
+   io:
+     micrometer.influx.InfluxMeterRegistry: WARN
+     lettuce.core.protocol:
+       ReconnectionHandler: WARN
+       ConnectionWatchdog: WARN
+  path: "./logs"
+
+log4jdbc:
+  sqltiming:
+    warn.threshold: 300   # 300ms 会打印warn级别的日志
+    error.threshold: 500  # 500m s 会打印error级别的日志
 

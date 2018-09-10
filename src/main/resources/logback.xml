@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+        <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+            <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+                <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%t] [%X{traceId}] %-5level %logger{50} - %msg%n</pattern>
+            </encoder>
+        </appender>
+        <!-- 日志输出级别 -->
+        <root level="INFO">
+            <appender-ref ref="CONSOLE"/>
+        </root>
+       <!-- <logger name="jdbc.sqltiming" level="OFF"/>
+        <logger name="jdbc.sqlonly" level="OFF"/>
+        <logger name="jdbc.audit" level="OFF"/>
+        <logger name="jdbc.connection" level="OFF"/>
+        <logger name="jdbc.resultset" level="OFF"/>
+        <logger name="jdbc.resultsettable" level="OFF"/>-->
+        <logger name="jdbc.sqlonly" level="OFF">
+            <appender-ref ref="CONSOLE"/>
+        </logger>
+        <logger name="jdbc.audit" level="OFF">
+            <appender-ref ref="CONSOLE"/>
+        </logger>
+        <logger name="jdbc.resultset" level="OFF">
+            <appender-ref ref="CONSOLE"/>
+        </logger>
+        <logger name="jdbc.connection" level="OFF">
+            <appender-ref ref="CONSOLE"/>
+        </logger>
+        <logger name="jdbc.resultsettable" level="OFF">
+            <appender-ref ref="CONSOLE"/>
+        </logger>
+</configuration>

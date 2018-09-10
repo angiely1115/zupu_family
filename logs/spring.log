@@ -1,36 +1,172 @@
-[2018-07-07 15:03:44.288] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 8548 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
-[2018-07-07 15:03:44.299] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
-[2018-07-07 15:03:44.338] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@60e9df3c: startup date [Sat Jul 07 15:03:44 GMT+08:00 2018]; root of context hierarchy
-[2018-07-07 15:03:45.541] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-[2018-07-07 15:03:46.257] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$78815508] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2018-07-07 15:03:46.551] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
-[2018-07-07 15:03:47.153] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
-[2018-07-07 15:03:47.858] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[2018-07-07 15:03:48.371] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@60e9df3c: startup date [Sat Jul 07 15:03:44 GMT+08:00 2018]; root of context hierarchy
-[2018-07-07 15:03:48.488] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-[2018-07-07 15:03:48.490] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-[2018-07-07 15:03:48.520] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[2018-07-07 15:03:48.521] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[2018-07-07 15:03:49.174] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
-[2018-07-07 15:03:49.585] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 5.948 seconds (JVM running for 9.433)
-[2018-07-07 15:06:24.279] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@60e9df3c: startup date [Sat Jul 07 15:03:44 GMT+08:00 2018]; root of context hierarchy
-[2018-07-07 15:06:24.310] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
-[2018-07-07 15:06:24.318] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
-[2018-07-07 15:07:02.229] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 11924 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
-[2018-07-07 15:07:02.230] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
-[2018-07-07 15:07:02.260] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@36a7abe1: startup date [Sat Jul 07 15:07:02 GMT+08:00 2018]; root of context hierarchy
-[2018-07-07 15:07:02.884] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-[2018-07-07 15:07:03.336] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$70fe81c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2018-07-07 15:07:03.584] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
-[2018-07-07 15:07:04.014] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
-[2018-07-07 15:07:04.547] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[2018-07-07 15:07:04.870] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@36a7abe1: startup date [Sat Jul 07 15:07:02 GMT+08:00 2018]; root of context hierarchy
-[2018-07-07 15:07:04.950] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-[2018-07-07 15:07:04.952] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-[2018-07-07 15:07:04.985] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[2018-07-07 15:07:04.986] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[2018-07-07 15:07:05.427] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
-[2018-07-07 15:07:05.824] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 4.142 seconds (JVM running for 5.41)
-[2018-07-07 15:07:26.322] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@36a7abe1: startup date [Sat Jul 07 15:07:02 GMT+08:00 2018]; root of context hierarchy
-[2018-07-07 15:07:26.351] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
-[2018-07-07 15:07:26.365] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-09-08 18:05:59.372] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 780 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-09-08 18:05:59.378] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-09-08 18:05:59.414] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5d12a356: startup date [Sat Sep 08 18:05:59 GMT+08:00 2018]; root of context hierarchy
+[2018-09-08 18:06:00.251] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-09-08 18:06:00.477] [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2018-09-08 18:06:00.763] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eb70431a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-09-08 18:06:01.166] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
+[2018-09-08 18:06:01.527] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-09-08 18:06:02.097] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-09-08 18:06:02.135] [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter com.baomidou.mybatisplus.spring.boot.starter.SpringBootVFS
+[2018-09-08 18:06:02.137] [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.lv.zupu.entity.FamilyVo matches criteria [is assignable to Object]
+[2018-09-08 18:06:02.625] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-08 18:06:02.837] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5d12a356: startup date [Sat Sep 08 18:05:59 GMT+08:00 2018]; root of context hierarchy
+[2018-09-08 18:06:02.901] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/valid]}" onto public java.lang.String com.lv.zupu.controller.DemoController.validDemo(com.lv.zupu.entity.FamilyVo) throws com.fasterxml.jackson.core.JsonProcessingException
+[2018-09-08 18:06:02.902] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/mylog]}" onto public java.lang.String com.lv.zupu.controller.DemoController.myLogDemo(java.lang.String)
+[2018-09-08 18:06:02.902] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/thpoll]}" onto public java.lang.String com.lv.zupu.controller.DemoController.threadPollDemo(java.lang.String)
+[2018-09-08 18:06:02.902] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/requestBodyTest]}" onto public java.lang.String com.lv.zupu.controller.DemoController.requestBodyTest(com.lv.zupu.domain.FamilyBo) throws com.fasterxml.jackson.core.JsonProcessingException
+[2018-09-08 18:06:02.904] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-08 18:06:02.905] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-08 18:06:02.940] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-08 18:06:02.940] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-08 18:06:02.960] [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in adviceErrorConfig
+[2018-09-08 18:06:03.427] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 4.448 seconds (JVM running for 6.106)
+[2018-09-08 18:06:03.659] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==>  Preparing: SELECT id,familyName,createTime,createUserId,updateTime,coverImgUrl,`describe`,authorName,isDelete FROM zupu_family WHERE id=? AND isDelete=1 
+[2018-09-08 18:06:03.813] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==> Parameters: 1(Integer)
+[2018-09-08 18:06:03.829] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - <==      Total: 1
+[2018-09-08 18:06:03.831] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==>  Preparing: SELECT id,familyName,createTime,createUserId,updateTime,coverImgUrl,`describe`,authorName,isDelete FROM zupu_family WHERE id=? AND isDelete=1 
+[2018-09-08 18:06:03.832] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==> Parameters: 2(Integer)
+[2018-09-08 18:06:03.834] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - <==      Total: 1
+[2018-09-08 18:06:03.848] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@5d12a356: startup date [Sat Sep 08 18:05:59 GMT+08:00 2018]; root of context hierarchy
+[2018-09-08 18:06:03.857] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-09-08 18:06:03.868] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+[2018-09-08 18:17:36.273] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 9860 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-09-08 18:17:36.274] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-09-08 18:17:36.313] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@149dd36b: startup date [Sat Sep 08 18:17:36 GMT+08:00 2018]; root of context hierarchy
+[2018-09-08 18:17:37.148] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-09-08 18:17:37.357] [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2018-09-08 18:17:37.677] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e24ae853] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-09-08 18:17:38.045] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
+[2018-09-08 18:17:38.406] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-09-08 18:17:38.840] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-09-08 18:17:38.884] [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter com.baomidou.mybatisplus.spring.boot.starter.SpringBootVFS
+[2018-09-08 18:17:38.885] [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.lv.zupu.entity.FamilyVo matches criteria [is assignable to Object]
+[2018-09-08 18:17:39.401] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-08 18:17:39.582] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@149dd36b: startup date [Sat Sep 08 18:17:36 GMT+08:00 2018]; root of context hierarchy
+[2018-09-08 18:17:39.642] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/valid]}" onto public java.lang.String com.lv.zupu.controller.DemoController.validDemo(com.lv.zupu.entity.FamilyVo) throws com.fasterxml.jackson.core.JsonProcessingException
+[2018-09-08 18:17:39.643] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/mylog]}" onto public java.lang.String com.lv.zupu.controller.DemoController.myLogDemo(java.lang.String)
+[2018-09-08 18:17:39.643] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/thpoll]}" onto public java.lang.String com.lv.zupu.controller.DemoController.threadPollDemo(java.lang.String)
+[2018-09-08 18:17:39.643] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/requestBodyTest]}" onto public java.lang.String com.lv.zupu.controller.DemoController.requestBodyTest(com.lv.zupu.domain.FamilyBo) throws com.fasterxml.jackson.core.JsonProcessingException
+[2018-09-08 18:17:39.645] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-08 18:17:39.645] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-08 18:17:39.669] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-08 18:17:39.669] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-08 18:17:39.685] [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in adviceErrorConfig
+[2018-09-08 18:17:40.130] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 4.368 seconds (JVM running for 5.403)
+[2018-09-08 18:17:40.271] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==>  Preparing: SELECT id,familyName,createTime,createUserId,updateTime,coverImgUrl,`describe`,authorName,isDelete FROM zupu_family WHERE id=? AND isDelete=1 
+[2018-09-08 18:17:40.403] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==> Parameters: 1(Integer)
+[2018-09-08 18:17:40.425] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - <==      Total: 1
+[2018-09-08 18:17:40.428] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==>  Preparing: SELECT id,familyName,createTime,createUserId,updateTime,coverImgUrl,`describe`,authorName,isDelete FROM zupu_family WHERE id=? AND isDelete=1 
+[2018-09-08 18:17:40.428] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==> Parameters: 1(Integer)
+[2018-09-08 18:17:40.431] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - <==      Total: 1
+[2018-09-08 18:17:40.436] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@149dd36b: startup date [Sat Sep 08 18:17:36 GMT+08:00 2018]; root of context hierarchy
+[2018-09-08 18:17:40.443] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-09-08 18:17:40.454] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+[2018-09-08 18:18:18.846] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 13128 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-09-08 18:18:18.847] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-09-08 18:18:18.879] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@149dd36b: startup date [Sat Sep 08 18:18:18 GMT+08:00 2018]; root of context hierarchy
+[2018-09-08 18:18:19.593] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-09-08 18:18:19.795] [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2018-09-08 18:18:20.079] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8258eb25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-09-08 18:18:20.434] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
+[2018-09-08 18:18:20.782] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-09-08 18:18:21.203] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-09-08 18:18:21.233] [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter com.baomidou.mybatisplus.spring.boot.starter.SpringBootVFS
+[2018-09-08 18:18:21.234] [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.lv.zupu.entity.FamilyVo matches criteria [is assignable to Object]
+[2018-09-08 18:18:21.696] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-08 18:18:21.881] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@149dd36b: startup date [Sat Sep 08 18:18:18 GMT+08:00 2018]; root of context hierarchy
+[2018-09-08 18:18:21.941] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/valid]}" onto public java.lang.String com.lv.zupu.controller.DemoController.validDemo(com.lv.zupu.entity.FamilyVo) throws com.fasterxml.jackson.core.JsonProcessingException
+[2018-09-08 18:18:21.942] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/mylog]}" onto public java.lang.String com.lv.zupu.controller.DemoController.myLogDemo(java.lang.String)
+[2018-09-08 18:18:21.942] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/thpoll]}" onto public java.lang.String com.lv.zupu.controller.DemoController.threadPollDemo(java.lang.String)
+[2018-09-08 18:18:21.942] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/requestBodyTest]}" onto public java.lang.String com.lv.zupu.controller.DemoController.requestBodyTest(com.lv.zupu.domain.FamilyBo) throws com.fasterxml.jackson.core.JsonProcessingException
+[2018-09-08 18:18:21.943] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-08 18:18:21.944] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-08 18:18:21.970] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-08 18:18:21.970] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-08 18:18:21.986] [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in adviceErrorConfig
+[2018-09-08 18:18:22.452] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 4.222 seconds (JVM running for 5.419)
+[2018-09-08 18:18:22.578] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==>  Preparing: SELECT id,familyName,createTime,createUserId,updateTime,coverImgUrl,`describe`,authorName,isDelete FROM zupu_family WHERE id=? AND isDelete=1 
+[2018-09-08 18:18:22.708] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==> Parameters: 1(Integer)
+[2018-09-08 18:18:22.726] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - <==      Total: 1
+[2018-09-08 18:18:22.727] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==>  Preparing: SELECT id,familyName,createTime,createUserId,updateTime,coverImgUrl,`describe`,authorName,isDelete FROM zupu_family WHERE id=? AND isDelete=1 
+[2018-09-08 18:18:22.728] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==> Parameters: 1(Integer)
+[2018-09-08 18:18:22.731] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - <==      Total: 1
+[2018-09-08 18:18:22.732] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==>  Preparing: SELECT id,familyName,createTime,createUserId,updateTime,coverImgUrl,`describe`,authorName,isDelete FROM zupu_family WHERE id=? AND isDelete=1 
+[2018-09-08 18:18:22.733] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==> Parameters: 1(Integer)
+[2018-09-08 18:18:22.734] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - <==      Total: 1
+[2018-09-08 18:18:22.735] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==>  Preparing: SELECT id,familyName,createTime,createUserId,updateTime,coverImgUrl,`describe`,authorName,isDelete FROM zupu_family WHERE id=? AND isDelete=1 
+[2018-09-08 18:18:22.736] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==> Parameters: 1(Integer)
+[2018-09-08 18:18:22.739] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - <==      Total: 1
+[2018-09-08 18:18:22.744] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@149dd36b: startup date [Sat Sep 08 18:18:18 GMT+08:00 2018]; root of context hierarchy
+[2018-09-08 18:18:22.751] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-09-08 18:18:22.761] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+[2018-09-08 18:20:28.863] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 15540 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-09-08 18:20:28.865] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-09-08 18:20:28.900] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@33fe57a9: startup date [Sat Sep 08 18:20:28 GMT+08:00 2018]; root of context hierarchy
+[2018-09-08 18:20:29.658] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-09-08 18:20:29.887] [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2018-09-08 18:20:30.149] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4406730] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-09-08 18:20:30.513] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
+[2018-09-08 18:20:30.853] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-09-08 18:20:31.251] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-09-08 18:20:31.291] [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter com.baomidou.mybatisplus.spring.boot.starter.SpringBootVFS
+[2018-09-08 18:20:31.293] [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.lv.zupu.entity.FamilyVo matches criteria [is assignable to Object]
+[2018-09-08 18:20:31.766] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-08 18:20:31.983] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@33fe57a9: startup date [Sat Sep 08 18:20:28 GMT+08:00 2018]; root of context hierarchy
+[2018-09-08 18:20:32.055] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/valid]}" onto public java.lang.String com.lv.zupu.controller.DemoController.validDemo(com.lv.zupu.entity.FamilyVo) throws com.fasterxml.jackson.core.JsonProcessingException
+[2018-09-08 18:20:32.056] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/mylog]}" onto public java.lang.String com.lv.zupu.controller.DemoController.myLogDemo(java.lang.String)
+[2018-09-08 18:20:32.057] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/thpoll]}" onto public java.lang.String com.lv.zupu.controller.DemoController.threadPollDemo(java.lang.String)
+[2018-09-08 18:20:32.057] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/requestBodyTest]}" onto public java.lang.String com.lv.zupu.controller.DemoController.requestBodyTest(com.lv.zupu.domain.FamilyBo) throws com.fasterxml.jackson.core.JsonProcessingException
+[2018-09-08 18:20:32.058] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-08 18:20:32.059] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-08 18:20:32.088] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-08 18:20:32.088] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-08 18:20:32.106] [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in adviceErrorConfig
+[2018-09-08 18:20:32.602] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 4.329 seconds (JVM running for 5.305)
+[2018-09-08 18:20:32.714] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==>  Preparing: SELECT id,familyName,createTime,createUserId,updateTime,coverImgUrl,`describe`,authorName,isDelete FROM zupu_family WHERE id=? AND isDelete=1 
+[2018-09-08 18:20:32.868] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==> Parameters: 1(Integer)
+[2018-09-08 18:20:32.886] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - <==      Total: 1
+[2018-09-08 18:20:32.888] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==>  Preparing: SELECT id,familyName,createTime,createUserId,updateTime,coverImgUrl,`describe`,authorName,isDelete FROM zupu_family WHERE id=? AND isDelete=1 
+[2018-09-08 18:20:32.888] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==> Parameters: 1(Integer)
+[2018-09-08 18:20:32.890] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - <==      Total: 1
+[2018-09-08 18:20:32.891] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==>  Preparing: SELECT id,familyName,createTime,createUserId,updateTime,coverImgUrl,`describe`,authorName,isDelete FROM zupu_family WHERE id=? AND isDelete=1 
+[2018-09-08 18:20:32.892] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==> Parameters: 1(Integer)
+[2018-09-08 18:20:32.893] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - <==      Total: 1
+[2018-09-08 18:20:32.898] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@33fe57a9: startup date [Sat Sep 08 18:20:28 GMT+08:00 2018]; root of context hierarchy
+[2018-09-08 18:20:32.904] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-09-08 18:20:32.914] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+[2018-09-08 18:20:57.086] [main] INFO  com.lv.zupu.ZupuApplicationTests - Starting ZupuApplicationTests on WIN7U-20170329W with PID 9856 (started by Administrator in D:\resource\workspace\zupu\zupu_family)
+[2018-09-08 18:20:57.087] [main] INFO  com.lv.zupu.ZupuApplicationTests - No active profile set, falling back to default profiles: default
+[2018-09-08 18:20:57.122] [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@33fe57a9: startup date [Sat Sep 08 18:20:57 GMT+08:00 2018]; root of context hierarchy
+[2018-09-08 18:20:57.989] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-09-08 18:20:58.188] [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2018-09-08 18:20:58.465] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eb70431a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-09-08 18:20:58.826] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 
+[2018-09-08 18:20:59.178] [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+[2018-09-08 18:20:59.612] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-09-08 18:20:59.645] [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter com.baomidou.mybatisplus.spring.boot.starter.SpringBootVFS
+[2018-09-08 18:20:59.647] [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.lv.zupu.entity.FamilyVo matches criteria [is assignable to Object]
+[2018-09-08 18:21:00.122] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-08 18:21:00.304] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@33fe57a9: startup date [Sat Sep 08 18:20:57 GMT+08:00 2018]; root of context hierarchy
+[2018-09-08 18:21:00.367] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/valid]}" onto public java.lang.String com.lv.zupu.controller.DemoController.validDemo(com.lv.zupu.entity.FamilyVo) throws com.fasterxml.jackson.core.JsonProcessingException
+[2018-09-08 18:21:00.368] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/mylog]}" onto public java.lang.String com.lv.zupu.controller.DemoController.myLogDemo(java.lang.String)
+[2018-09-08 18:21:00.369] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/thpoll]}" onto public java.lang.String com.lv.zupu.controller.DemoController.threadPollDemo(java.lang.String)
+[2018-09-08 18:21:00.369] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/requestBodyTest]}" onto public java.lang.String com.lv.zupu.controller.DemoController.requestBodyTest(com.lv.zupu.domain.FamilyBo) throws com.fasterxml.jackson.core.JsonProcessingException
+[2018-09-08 18:21:00.371] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-08 18:21:00.372] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-08 18:21:00.401] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-08 18:21:00.401] [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-08 18:21:00.420] [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in adviceErrorConfig
+[2018-09-08 18:21:01.246] [main] INFO  com.lv.zupu.ZupuApplicationTests - Started ZupuApplicationTests in 4.748 seconds (JVM running for 5.86)
+[2018-09-08 18:21:01.372] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==>  Preparing: SELECT id,familyName,createTime,createUserId,updateTime,coverImgUrl,`describe`,authorName,isDelete FROM zupu_family WHERE id=? AND isDelete=1 
+[2018-09-08 18:21:01.544] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==> Parameters: 1(Integer)
+[2018-09-08 18:21:01.564] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - <==      Total: 1
+[2018-09-08 18:21:01.565] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==>  Preparing: SELECT id,familyName,createTime,createUserId,updateTime,coverImgUrl,`describe`,authorName,isDelete FROM zupu_family WHERE id=? AND isDelete=1 
+[2018-09-08 18:21:01.566] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==> Parameters: 1(Integer)
+[2018-09-08 18:21:01.568] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - <==      Total: 1
+[2018-09-08 18:21:01.569] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==>  Preparing: SELECT id,familyName,createTime,createUserId,updateTime,coverImgUrl,`describe`,authorName,isDelete FROM zupu_family WHERE id=? AND isDelete=1 
+[2018-09-08 18:21:01.570] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - ==> Parameters: 1(Integer)
+[2018-09-08 18:21:01.571] [main] DEBUG com.lv.zupu.mapperDao.FamilyMapperDao.selectById - <==      Total: 1
+[2018-09-08 18:21:01.576] [Thread-3] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@33fe57a9: startup date [Sat Sep 08 18:20:57 GMT+08:00 2018]; root of context hierarchy
+[2018-09-08 18:21:01.582] [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[2018-09-08 18:21:01.591] [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
