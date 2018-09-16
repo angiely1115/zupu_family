@@ -10,13 +10,13 @@
         <root level="INFO">
             <appender-ref ref="CONSOLE"/>
         </root>
-       <!-- <logger name="jdbc.sqltiming" level="OFF"/>
-        <logger name="jdbc.sqlonly" level="OFF"/>
-        <logger name="jdbc.audit" level="OFF"/>
-        <logger name="jdbc.connection" level="OFF"/>
-        <logger name="jdbc.resultset" level="OFF"/>
-        <logger name="jdbc.resultsettable" level="OFF"/>-->
-        <logger name="jdbc.sqlonly" level="OFF">
+        <logger name="jdbc.sqltiming" level="ERROR"/>
+        <logger name="jdbc.sqlonly" level="INFO"/>
+        <logger name="jdbc.audit" level="ERROR"/>
+        <logger name="jdbc.connection" level="ERROR"/>
+        <logger name="jdbc.resultset" level="ERROR"/>
+        <logger name="jdbc.resultsettable" level="INFO"/>
+        <!--<logger name="jdbc.sqlonly" level="INFO">
             <appender-ref ref="CONSOLE"/>
         </logger>
         <logger name="jdbc.audit" level="OFF">
@@ -30,5 +30,5 @@
         </logger>
         <logger name="jdbc.resultsettable" level="OFF">
             <appender-ref ref="CONSOLE"/>
-        </logger>
+        </logger>-->
 </configuration>

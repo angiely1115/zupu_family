@@ -34,10 +34,12 @@ public class DemoService {
     private ExecutorService executorService;
 
     public String demoJson(FamilyVo familyVo) throws JsonProcessingException {
-        System.out.println(redisCache.remove("familyVo_1111"));
-        redisCache.set("familyVo_1112",familyVo,600, TimeUnit.SECONDS);
+//        System.out.println(redisCache.remove("familyVo_1111"));
+//        redisCache.set("familyVo_1112",familyVo,600, TimeUnit.SECONDS);
+        redisCache.set("familyVo_1112",objectMapperJson.obj2string(familyVo),600, TimeUnit.SECONDS);
+        //不能直接转换
         FamilyBo familyBo = (FamilyBo) redisCache.get("familyVo_1112");
-        return jacksonXml.objToxml(familyBo);
+        return jacksonXml.objToxml( redisCache.get("familyVo_1112"));
     }
 
     public void aysnThreadPool(){

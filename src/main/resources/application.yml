@@ -105,4 +105,3 @@ log4jdbc:
   sqltiming:
     warn.threshold: 300   # 300ms 会打印warn级别的日志
     error.threshold: 500  # 500m s 会打印error级别的日志
-

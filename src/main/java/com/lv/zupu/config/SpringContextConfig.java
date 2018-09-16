@@ -36,8 +36,9 @@ public class SpringContextConfig implements BeanPostProcessor,ApplicationContext
     public SpringContextConfig() {
     }
 
+    @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        applicationContext = applicationContext;
+        SpringContextConfig.applicationContext = applicationContext;
     }
 
     public static ApplicationContext getApplicationContext() {
@@ -83,12 +84,20 @@ public class SpringContextConfig implements BeanPostProcessor,ApplicationContext
 
     @Nullable
     @Override
+    public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+        if(bean instanceof DataSource){
+            initLog4Jdbc();
+        }
+        return bean;
+    }
+
+    @Nullable
+    @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         if(bean instanceof DataSource){
             DataSource dataSource = (DataSource) bean;
             log.info("**********dataSource*********:{}",dataSource);
             DataSourceSpy dataSourceSpy = new DataSourceSpy(dataSource);
-            initLog4Jdbc();
             return dataSourceSpy;
         }
         return bean;
@@ -102,14 +111,12 @@ public class SpringContextConfig implements BeanPostProcessor,ApplicationContext
     private void initLog4Jdbc() {
         String[] var1 = PROPERTIES_TO_COPY;
         int var2 = var1.length;
-
         for(int var3 = 0; var3 < var2; ++var3) {
             String property = var1[var3];
             if (this.environment.containsProperty(property)) {
                 System.setProperty(property, this.environment.getProperty(property));
             }
         }
-
         System.setProperty("log4jdbc.spylogdelegator.name", this.environment.getProperty("log4jdbc.spylogdelegator.name", Slf4jSpyLogDelegator.class.getName()));
     }
     @Override
