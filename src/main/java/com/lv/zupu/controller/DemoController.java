@@ -6,10 +6,7 @@ import com.lv.zupu.domain.FamilyBo;
 import com.lv.zupu.entity.FamilyVo;
 import com.lv.zupu.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.Date;
@@ -26,6 +23,11 @@ import java.util.Date;
 public class DemoController {
     @Autowired
     private DemoService demoService;
+
+    @GetMapping("redis_test")
+    public void redisTest(){
+        demoService.redisTest();
+    }
     @RequestMapping("/valid")
     @ResponseBody
     public String validDemo(@Valid @RequestBody FamilyVo familyVo) throws JsonProcessingException {
@@ -36,8 +38,10 @@ public class DemoController {
 
     @MyLog("请求logdemo")
     @RequestMapping("/mylog")
-    public String myLogDemo(String name){
-        return "log:"+name;
+    public FamilyBo myLogDemo(String name){
+        FamilyBo familyBo = new FamilyBo();
+        familyBo.setAuthorName(name);
+        return familyBo;
     }
     @RequestMapping("/thpoll")
     public String threadPollDemo(String name){

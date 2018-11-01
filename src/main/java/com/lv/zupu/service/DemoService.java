@@ -10,6 +10,7 @@ import com.lv.zupu.entity.FamilyVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
 
@@ -52,5 +53,19 @@ public class DemoService {
             }*/
             System.out.println(Thread.currentThread().getName()+"线程池异步执行.............");
         });
+    }
+
+
+    public FamilyVo redisTest(){
+        FamilyVo familyVo = new FamilyVo();
+        familyVo.setFamilyName("吕世春");
+        familyVo.setCreateTime(new Date());
+        familyVo.setCoverImgUrl("kklll");
+        redisCache.set("familyVo_11",familyVo,2,TimeUnit.MINUTES);
+        String string = stringRedisCache.get("familyVo_11");
+        System.out.println("999999:"+string);
+        //打印结果：999999:["com.lv.zupu.entity.FamilyVo",{"familyName":"吕世春","id":null,"createTime":["java.util.Date",1541057545959],"createUserId":null,"updateTime":null,"coverImgUrl":"kklll","describe":null,"authorName":null,"isDelete":null}]
+        //不能直接转成FamilyBo
+        return familyVo;
     }
 }
