@@ -42,4 +42,15 @@ stringRedisTemplate.opsForValue().set(var1,var2,expiretime,timeUnit);
     public Boolean remove(String var1) throws CacheException {
         return stringRedisTemplate.delete(var1);
     }
+
+    /**
+     * boundValueOps 与opsForValue 操作相同
+     * http://357029540.iteye.com/blog/2399036
+     * @param key
+     * @return
+     */
+    public Long boundValue(String key){
+        stringRedisTemplate.opsForValue();
+        return stringRedisTemplate.boundValueOps(key).increment(1);
+    }
 }
