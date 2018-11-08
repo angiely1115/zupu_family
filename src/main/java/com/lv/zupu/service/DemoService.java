@@ -66,8 +66,10 @@ public class DemoService {
         System.out.println("999999:"+string);
         //打印结果：999999:["com.lv.zupu.entity.FamilyVo",{"familyName":"吕世春","id":null,"createTime":["java.util.Date",1541057545959],"createUserId":null,"updateTime":null,"coverImgUrl":"kklll","describe":null,"authorName":null,"isDelete":null}]
         //不能直接转成FamilyBo
-
-
         return familyVo;
+    }
+
+    public FamilyVo redisMapTest(){
+        return null;
     }
 }

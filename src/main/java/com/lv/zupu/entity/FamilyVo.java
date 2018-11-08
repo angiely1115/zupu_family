@@ -47,4 +47,36 @@ public class FamilyVo extends Model<FamilyVo>{
     protected Serializable pkVal() {
         return this.id;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        FamilyVo familyVo = (FamilyVo) o;
+
+        if (familyName != null ? !familyName.equals(familyVo.familyName) : familyVo.familyName != null) return false;
+        if (id != null ? !id.equals(familyVo.id) : familyVo.id != null) return false;
+        if (createUserId != null ? !createUserId.equals(familyVo.createUserId) : familyVo.createUserId != null)
+            return false;
+        if (updateTime != null ? !updateTime.equals(familyVo.updateTime) : familyVo.updateTime != null) return false;
+        if (coverImgUrl != null ? !coverImgUrl.equals(familyVo.coverImgUrl) : familyVo.coverImgUrl != null)
+            return false;
+        if (describe != null ? !describe.equals(familyVo.describe) : familyVo.describe != null) return false;
+        if (authorName != null ? !authorName.equals(familyVo.authorName) : familyVo.authorName != null) return false;
+        return isDelete != null ? isDelete.equals(familyVo.isDelete) : familyVo.isDelete == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = familyName != null ? familyName.hashCode() : 0;
+        result = 31 * result + (id != null ? id.hashCode() : 0);
+        result = 31 * result + (createUserId != null ? createUserId.hashCode() : 0);
+        result = 31 * result + (updateTime != null ? updateTime.hashCode() : 0);
+        result = 31 * result + (coverImgUrl != null ? coverImgUrl.hashCode() : 0);
+        result = 31 * result + (describe != null ? describe.hashCode() : 0);
+        result = 31 * result + (authorName != null ? authorName.hashCode() : 0);
+        result = 31 * result + (isDelete != null ? isDelete.hashCode() : 0);
+        return result;
+    }
 }
