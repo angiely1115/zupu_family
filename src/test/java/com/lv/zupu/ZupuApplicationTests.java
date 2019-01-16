@@ -53,13 +53,14 @@ public class ZupuApplicationTests {
     public void updateFamilyById() {
         FamilyVo familyVo = new FamilyVo();
         familyVo.setAuthorName("吕荣森");
-        familyVo.setCoverImgUrl("kklll/d.jpg");
+        familyVo.setCoverImgUrl("kklll/666.jpg");
         familyVo.setCreateUserId("163987");
         familyVo.setDescribe("吕氏家族");
         familyVo.setFamilyName("吕氏1");
         familyVo.setId(3L);
         familyVo.setIsDelete(1);
         familyService.updateById(familyVo);
+        int i = 1/0;
     }
 
     @Test

@@ -19,7 +19,7 @@ import java.util.Set;
 
 /**
  * @Author: lvrongzhuan
- * @Description: redis 不同数据结构测试
+ * @Description: redis 不同数据结构测试 领悟 对于一些业务的操作 可以优先考虑用redis来存储在考虑mysql
  * @Date: 2018/11/8 10:26
  * @Version: 1.0
  * modified by:
@@ -121,6 +121,8 @@ public class RedisApplicationTests {
         System.out.println("取出zSet某个集合分数范围在某个区间从小到大元素和分数：" + typedTuples);
         objects = redisTemplate.opsForZSet().rangeByLex("integral_list", new RedisZSetCommands.Range());
         System.out.println("取出zSet某个集合所有分数范围从小到大元素 rangeByLex：" + objects);
+        //确定某个元素的索引位置
+        redisTemplate.opsForZSet().rank("integral_list",1);
     }
 
     @Test

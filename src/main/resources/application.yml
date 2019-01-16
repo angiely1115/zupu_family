@@ -37,7 +37,11 @@ spring:
       pool:
         max-active: 10
         max-idle: 10
-#json时间戳返回
+  cache:
+    redis:
+      time-to-live: 604800s #默认7天过期 这种只对spring cache方式起作用
+      use-key-prefix: false #spring cache方式是否使用key前缀
+  #json时间戳返回
   jackson:
     serialization:
       WRITE_DATES_AS_TIMESTAMPS: true
